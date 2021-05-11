@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TransmittalRecordsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvHeaderEPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_margin="5dp"
+            android:text="Transmittal Record Lists"
+            android:textColor="#F0F8FF"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTxtSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="25pt"
+                android:layout_marginTop="5px"
+                android:layout_marginRight="2dp"
+                android:inputType="textCapCharacters"
+                android:ems="10"
+                android:layout_weight="1"
+                android:background="@drawable/ic_border_ui"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:drawablePadding="10dp"
+                android:hint="Search RR No."
+                android:drawableLeft="@drawable/ic_file"/>
+
+            <ImageButton
+                android:id="@+id/btnSearchRR"
+                android:layout_width="100px"
+                android:layout_height="46dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorPrimary"
+                android:src="@drawable/ic_search"
+                android:textColor="@android:color/white"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/btnResetRR"
+                android:layout_width="100px"
+                android:layout_height="46dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5px"
+                android:background="@color/colorPrimary"
+                android:src="@drawable/ic_refresh"
+                android:textColor="@android:color/white"></ImageButton>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_margin="5dp"
+            android:text="Records"
+            android:textColor="#F0F8FF"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+</LinearLayout>

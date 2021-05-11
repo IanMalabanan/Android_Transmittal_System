@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='Transmittal_System_Android'
